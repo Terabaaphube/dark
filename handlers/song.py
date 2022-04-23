@@ -23,9 +23,9 @@ from yt_dlp.utils import (
 
 @Client.on_message(filters.command("song") & ~filters.edited)
 async def song(client, message):
-    cap = "**ꜱᴏɴɢ ᴜᴘʟᴏᴀᴅᴇᴅ ʙʏ ꜱᴜᴍɪᴛ ʏᴀᴅᴀᴠ...**"
+    cap = "**ꜱᴏɴɢ ᴜᴘʟᴏᴀᴅᴇᴅ ʙʏ Techno music...**"
     url = message.text.split(None, 1)[1]
-    rkp = await message.reply("**🎧...**")
+    rkp = await message.reply(" 🙃 ")
     if not url:
         await rkp.edit("**ᴘʟᴇᴀꜱᴇ ᴘʀᴏᴠɪᴅᴇ \n ꜱᴏɴɢ ɴᴀᴍᴇ...**")
     search = SearchVideos(url, offset=1, mode="json", max_results=1)
